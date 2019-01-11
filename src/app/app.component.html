@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>{{ title }}</title>
+    </head>
+    <body>
+
+
+      <div style="text-align:center">
+        <h1>
+          {{ title }}!
+        </h1>
+        <nav>
+          <button on-click= "viewQuotes()">Review Quotes</button><br>
+          <button on-click= "famQuotes()">Famous Quotes</button><br>
+          <button on-click= "addQuotes()">Add Custom Quote</button>
+        </nav>
+    </body>
+      <router-outlet></router-outlet>
+
+  </html>

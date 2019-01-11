@@ -1,0 +1,10 @@
+button{
+  height: 150px;
+  width: 350px;
+  border-radius: 45px;
+  border-bottom: 100px;
+  background-color: teal;
+}
+body{
+background-image: url("bg.jpg");
+}
