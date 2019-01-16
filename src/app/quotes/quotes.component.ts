@@ -8,8 +8,8 @@ import { Quote } from '../quote';
 })
 export class QuotesComponent implements OnInit {
  quotes = [
-   new Quote(1,"Jack","n fvjndsofknvcksn djkvzxcn kjn zxkcn jknnx jjc jnjvdn zxjmn","McClamore",new Date()),
-   new Quote(2,"Jim","n fvjndsofknvcksn djkvzxcn kjn zxkcn jknnx jjc jnjvdn zxjmn","McTommminay",new Date()),
+   new Quote(1,"Jack","You know you’re in love when you can’t fall asleep because reality is finally better than your dreams.","Dr. Suess",new Date()),
+   new Quote(2,"Jim","The first step toward success is taken when you refuse to be a captive of the environment in which you first find yourself.","Mark Caine",new Date()),
  ]
  toggleDetails(index){
    this.quotes[index].showDescription = !this.quotes[index].showDescription;

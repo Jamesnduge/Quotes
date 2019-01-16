@@ -1,29 +1,30 @@
 <div class="container-fluid">
     <div class="row">
-        <form>
+        <form #form= 'ngForm' (submit)= 'submitQuote()'>
             <div class="form-group">
 
                 <label for="name">Name</label>
-                <input type="text" required class="form-control" id="name">
+                <input type="text" required class="form-control" id="name" [(ngModel)]="newQuote.name">
 
             </div>
             <div class="form-group">
 
                 <label for="quote">Quote</label>
-                <textarea class="form-control" id="quote" rows="4" required></textarea>
+                <textarea class="form-control" id="quote" rows="4" required [(ngModel)]="newQuote.quote"></textarea>
 
             </div>
             <div class="form-group">
 
                 <label for="author">Author</label>
-                <input type="text" required class="form-control" id="author">
+                <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author">
 
             </div>
             <div class="form-group">
                 <label for="date">Date</label>
-                <input type='date' id="date" required>
+                <input type='date' id="date" required [(ngModel)]="newQuote.date">
 
             </div>
+            <button type="submit">Sumit</button>
         </form>
     </div>
 </div>

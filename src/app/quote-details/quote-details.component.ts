@@ -15,11 +15,10 @@ export class QuoteDetailsComponent implements OnInit {
   disLikes:number = 0;
   upVote(){
     return this.likes++;
-    
+
   }
   downVote(){
-    var dislike = this.disLikes++;
-    return dislike;
+    return this.disLikes++;
   }
   constructor() { }
 
