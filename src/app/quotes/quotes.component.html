@@ -1,0 +1,11 @@
+<h1>My Quotes</h1>
+<div class="container">
+    <div class="row">
+        <app-quote-form (addQuote) = "addQuote($event)"></app-quote-form>
+    </div>
+    <div class="Quotes" *ngFor="let quote of quotes; let i=index">
+      <p>"{{quote.quote}}"</p><br>
+      <button type="button"(click)="toggleDetails(i)">More</button>
+      <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (notNeeded)='delete($event, i)'></app-quote-details>
+    </div>
+</div>
