@@ -1,0 +1,12 @@
+<p>
+Author: {{quote.author}}
+</p>
+<p>
+Submitted by: {{quote.name}}
+</p>
+<p>
+Date: {{quote.date}}
+</p>
+<button type="button"(click)="upVote()">Like {{likes}}</button>
+<button type="button"(click)="downVote()">Dislike</button>
+<button type="button"(click)="delete(true)">Delete Quote</button>
