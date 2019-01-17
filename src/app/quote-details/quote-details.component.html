@@ -1,3 +1,5 @@
+<body>
+
 <p>
 Author: {{quote.author}}
 </p>
@@ -7,6 +9,7 @@ Submitted by: {{quote.name}}
 <p>
 Date: {{quote.date}}
 </p>
-<button type="button"(click)="upVote()">Like {{likes}}</button>
-<button type="button"(click)="downVote()">Dislike {{disLikes}}</button>
-<button type="button"(click)="delete(true)">Delete Quote</button>
+<button id="like" type="button"(click)="upVote()">Like {{likes}}</button>
+<button id="dislike" type="button"(click)="downVote()">Dislike {{disLikes}}</button><br><br>
+<button id="delete" type="button"(click)="delete(true)">Delete Quote</button>
+</body>

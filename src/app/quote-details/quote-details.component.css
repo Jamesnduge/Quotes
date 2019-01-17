@@ -1,0 +1,27 @@
+body{
+  background-color: salmon;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#like{
+  background-color: teal;
+  height: 30px;
+  width: 60px;
+  border-radius: 30%;
+  font-style: italic;
+  margin-right: 10px;
+}
+#dislike{
+  background-color: yellow;
+  height: 30px;
+  width: 70px;
+  border-radius: 30%;
+  font-style: italic;
+}
+#delete{
+  background-color: firebrick;
+  height: 30px;
+  width: 100px;
+  color: white;
+  border-radius: 24%;
+}
