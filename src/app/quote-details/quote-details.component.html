@@ -7,9 +7,9 @@ Author: {{quote.author}}
 Submitted by: {{quote.name}}
 </p>
 <p>
-Date: {{quote.date}}
+Time elapsed: {{quote.date|date|dateCount}} Days
 </p>
 <button id="like" type="button"(click)="upVote()">Like {{likes}}</button>
 <button id="dislike" type="button"(click)="downVote()">Dislike {{disLikes}}</button><br><br>
-<button id="delete" type="button"(click)="delete(true)">Delete Quote</button>
+<button id="delete" type="button"(click)="delete(true)">Delete</button>
 </body>
